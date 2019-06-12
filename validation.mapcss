@@ -1,6 +1,6 @@
 /* Polygonalized pier should be with area tag;*/
 
-way[man_made=pier]:closed[area!=yes]{
+way[man_made=pier]:closed[!area]{
   throwWarning: tr("Pier in polygon, missing area=yes");
   group: tr("missing tag combination in Pier");
   fixAdd: "area=yes";
