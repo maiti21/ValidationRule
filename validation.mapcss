@@ -6,7 +6,7 @@ way[man_made=pier]:closed[!area]{
   fixAdd: "area=yes";
 }
 
-way[man_made=breakwater]:closed[area!=yes]{
+way[man_made=breakwater]:closed[!area]{
   throwWarning: tr("Breakwater in polygon, missing area=yes");
   group: tr("missing tag combination in Breakwater");
   fixAdd: "area=yes";
